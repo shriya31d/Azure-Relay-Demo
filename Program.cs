@@ -5,10 +5,17 @@ namespace Server
 {
     public class Program
     {
-        private const string RelayNamespace = "";
-        private const string ConnectionName = "";
-        private const string KeyName = "";
-        private const string Key = "";
+        // replace {RelayNamespace} with the name of your namespace
+        private const string RelayNamespace = "{RelayNamespace}.servicebus.windows.net";
+        
+        // replace {HybridConnectionName} with the name of your hybrid connection
+        private const string ConnectionName = "{HybridConnectionName}";
+        
+        // replace {SAKKeyName} with the name of your Shared Access Policies key
+        private const string KeyName = "{SAKKeyName}";
+
+        // replace {SASKey} with the primary key
+        private const string Key = "{SASKey}";
 
         public static void Main(string[] args)
         {
